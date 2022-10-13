@@ -1,7 +1,8 @@
 % Text packages
 \usepackage[french]{babel}
-\usepackage[utf8x]{inputenc}
-\usepackage{lmodern} % Latin founts
+\usepackage[utf8x]{inputenc} % fix text encode to the final document
+\usepackage{xspace} % fix spaces problems
+% \usepackage{lmodern} % Latin founts, can be useful?
 
 % Fonts packages
 \usepackage{ifxetex}
@@ -11,7 +12,6 @@
     [
       BoldFont=OpenDyslexic-Bold,
       ItalicFont=OpenDyslexic-Italic,
-      % BoldItalicFont=OpenDyslexic-Bold-Italic,
       BoldItalicFont=OpenDyslexic-BoldItalic,
       SmallCapsFont=OpenDyslexicMono
     ]
@@ -37,38 +37,36 @@
 
 % Clickable link
 \usepackage{hyperref}
+\usepackage{bookmark}
 
-% Image side by side
-\usepackage{subcaption}
-\usepackage{lscape}
-\usepackage[driver=pdftex]{geometry}
+% Image
+\usepackage{graphicx}
+\usepackage{subcaption} % Image side by side
 
 % Import table
-\usepackage{multirow}
-\usepackage[table]{xcolor}
 \usepackage{tabularx}
-\usepackage{longtable}
-\usepackage{float}
-\usepackage{array}
+\usepackage{multirow} % merge rows
+\usepackage{multicol} % merge columns
+\usepackage[table]{xcolor}
+\usepackage{longtable} % Allow tables to occupy several pages
+\usepackage{array} % For table and array format
+
+\usepackage{float} % For floating objects position lik figures or tables
 
 % Text color
 \usepackage{xcolor}
 
-\usepackage{multicol}
-\usepackage{xspace}
-
-% Edit titles
-\usepackage{titlesec}
-
-% Image
-\usepackage{graphicx}
-
-\usepackage{bookmark}
-
-% Graph import
-\usepackage[pdf]{graphviz}
+% Custom titles
+% \usepackage{titlesec}
 
 % Code import
-% \usepackage{minted}
+% \usepackage{lstlisting}
+
+% Graphviz import
+% \usepackage[pdf]{graphviz}
+
+% Page geometry (landscape...)
+\usepackage{lscape}
+\usepackage[driver=pdftex]{geometry}
 
 \usepackage{magictex}
